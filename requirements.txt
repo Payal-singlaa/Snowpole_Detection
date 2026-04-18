@@ -1,0 +1,16 @@
+# Core ML
+ultralytics==8.4.37
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data processing
+numpy
+pandas
+
+# Visualization
+matplotlib
+opencv-python
+
+# Utils
+pyyaml
+tqdm
