@@ -5,12 +5,11 @@
 This project focuses on detecting **snow poles** in road images using **YOLOv8 object detection models**.
 Snow poles are **thin, small, and high-aspect-ratio objects**, making them a challenging detection problem.
 
-The project includes:
-
+### 🔍 Project Scope
 * Exploratory Data Analysis (EDA)
 * Training multiple YOLOv8 models
-* Model evaluation and comparison
-* Test set qualitative analysis
+* Quantitative evaluation on validation set
+* Qualitative analysis on test set
 
 ---
 
@@ -72,12 +71,16 @@ dataset/
 
 Key findings:
 
-* Most images contain **1–2 poles**
-* Objects are **very small in width**
-* High **height-to-width ratio**
-* Strong positional patterns in images
+* Objects are very small relative to image size
+* High aspect ratio (thin vertical structures)
+* Most images contain 1–2 objects (sparse scenes)
+* Images have consistent resolution (~1920×1200)
 
-These characteristics directly impact model performance and localization accuracy.
+### 💡 Implications
+
+* Small object detection is inherently difficult
+* High resolution inputs improve performance
+* Precise localization is challenging due to thin shapes
 
 ---
 
@@ -124,7 +127,7 @@ These characteristics directly impact model performance and localization accurac
 
 ### Reason (from EDA):
 
-Snow poles are **thin and small**, making bounding box precision difficult.
+Snow poles are **thin, small and elongated**, making bounding box precision difficult.
 
 ---
 
