@@ -57,15 +57,6 @@ dataset/
 * **Train / Validation**: images with YOLO-format annotations
 * **Test**: images only (no labels)
 
-
-###  Key Characteristics (from EDA)
-
-* Small objects
-* Thin vertical structures
-* High aspect ratio
-* Sparse object distribution
-
-
 ### ⚠️ Notes
 
 * The **test set does not contain labels**, therefore:
