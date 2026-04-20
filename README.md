@@ -151,21 +151,10 @@ Predictions generated on test images:
 ```bash
 pip install -r requirements.txt
 ```
+
 ---
 
 ### Train
-
-```
-yolo detect train \
-  data=dataset/data.yaml \
-  model=yolov8m.pt \
-  imgsz=1024 \
-  epochs=100
-```
-
----
-
-### Validate model
 
 ```
 python train.py
