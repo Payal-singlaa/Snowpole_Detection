@@ -9,18 +9,19 @@ __pycache__/
 # =========================
 # Virtual Environments
 # =========================
-env/
 venv/
 .venv/
-*/bin/
-*/lib/
+env/
 
 # =========================
 # YOLO / Training Outputs
 # =========================
-runs/
+# Ignore ALL weights and model files
 *.pt
 *.onnx
+
+# Ignore only weights folders (but keep other results)
+**/weights/
 
 # =========================
 # Dataset (IMPORTANT)
@@ -56,5 +57,3 @@ Thumbs.db
 *.zip
 *.tar
 *.gz
-
-README.md
