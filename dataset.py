@@ -31,7 +31,23 @@ class SnowPoleDataset(Dataset):
         if os.path.exists(label_path):
             with open(label_path) as f:
                 for line in f:
-                    cls, x1, y1, x2, y2 = map(float, line.split())
+                    cls, x_center, y_center, w, h = map(float, line.split())
+
+                    img_w, img_h = 640, 640  # since you resize
+
+                    x_center *= img_w
+                    y_center *= img_h
+                    w *= img_w
+                    h *= img_h
+
+                    x1 = x_center - w / 2
+                    y1 = y_center - h / 2
+                    x2 = x_center + w / 2
+                    y2 = y_center + h / 2
+
+                    if x2 > x1 and y2 > y1:
+                        boxes.append([x1, y1, x2, y2])
+                        labels.append(int(cls) + 1)  # IMPORTANT for RCNN
 
                     if x2 > x1 and y2 > y1:
                         boxes.append([x1, y1, x2, y2])
