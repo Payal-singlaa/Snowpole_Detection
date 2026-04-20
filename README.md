@@ -28,24 +28,52 @@ snow_pole_project/
 
 ---
 
-## 📊 Dataset
+## 📂 Dataset
+
+The dataset consists of road images containing **snow poles**, which serve as visual markers in snowy environments.
+
+### 📊 Dataset Size
 
 * ~322 training images
 * ~92 validation images
 * Test set (unlabeled)
 
-### Key Characteristics (from EDA)
+
+
+### 🗂️ Structure
+
+```
+dataset/
+├── train/
+│   ├── images/
+│   ├── labels/
+├── valid/
+│   ├── images/
+│   ├── labels/
+├── test/
+    ├── images/
+```
+
+* **Train / Validation**: images with YOLO-format annotations
+* **Test**: images only (no labels)
+
+
+###  Key Characteristics (from EDA)
 
 * Small objects
 * Thin vertical structures
 * High aspect ratio
 * Sparse object distribution
 
-⚠️ **Note:**
-The test set does not contain labels, so:
 
-* Validation set → used for metrics (mAP)
-* Test set → used for qualitative analysis
+### ⚠️ Notes
+
+* The **test set does not contain labels**, therefore:
+
+  * Validation set → used for quantitative evaluation (mAP)
+  * Test set → used for qualitative analysis
+
+* The dataset is **not included in this repository** because it was provided by our course instructor and is subject to usage restrictions.
 
 ---
 
