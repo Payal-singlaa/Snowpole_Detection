@@ -52,3 +52,5 @@ results/rcnn/predictions/*.jpg
 # =========================
 .DS_Store
 Thumbs.db
+
+.idea/
