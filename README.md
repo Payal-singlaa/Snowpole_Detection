@@ -111,17 +111,6 @@ Model used:
 
 ---
 
-## 🔍 Comparison with YOLO
-
-| Model | Precision | Recall | Speed | Behavior |
-|------|----------|--------|------|---------|
-| YOLOv8 | High | High | Fast ⚡ | Balanced |
-| Faster R-CNN | Medium | High* | Slow 🐢 | Recall-focused |
-
-\*High recall achieved in early epochs
-
----
-
 ## 🧪 Evaluation
 
 - Custom evaluation implemented  
