@@ -4,8 +4,6 @@
 
 This project explores **snow pole detection** using a **Faster R-CNN** model.
 
-Unlike YOLO (single-stage detector), Faster R-CNN is a **two-stage detector**, making it better suited for analyzing detection behavior, especially for **small and challenging objects**.
-
 Snow poles are:
 - thin  
 - small  
@@ -33,7 +31,7 @@ snow_pole_project/
 ├── model.py # Faster R-CNN model setup
 ├── eval_utils.py # Evaluation utilities
 ├── predict.py # Inference + visualization
-├── results/rcnn/ # Prediction outputs
+├── results/ # Prediction outputs
 ├── README.md
 ```
 
